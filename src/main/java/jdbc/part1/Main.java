@@ -1,4 +1,6 @@
-package jdbc;
+package jdbc.part1;
+
+import jdbc.part1.Crud;
 
 import java.sql.SQLException;
 

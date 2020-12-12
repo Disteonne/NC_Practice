@@ -1,4 +1,6 @@
-package jdbc;
+package jdbc.part1;
+
+import jdbc.part1.ConnectionSQL;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
