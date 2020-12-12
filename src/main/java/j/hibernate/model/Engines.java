@@ -1,6 +1,9 @@
 package j.hibernate.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Objects;
 
 /*
@@ -11,9 +14,13 @@ import java.util.Objects;
 * 4) not final.
  */
 
+@Entity
+@Table(name ="engines")
 public class Engines {
-
+    @Id
+    @Column
     private String model;
+    @Column
     private int power;
 
     public Engines(String model, int power) {

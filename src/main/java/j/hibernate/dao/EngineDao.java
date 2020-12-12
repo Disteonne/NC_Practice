@@ -15,7 +15,7 @@ public class EngineDao implements Dao<Engines,String> {
     @Override
     public void create(Engines engines) {
         //session-поток. НЕ
-        try(Session session=factory.openSession()) {
+        try (Session session=factory.openSession()) {
 
             session.beginTransaction();
             session.save(engines);
