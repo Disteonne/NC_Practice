@@ -1,6 +1,6 @@
-package j.hibernate.dao;
+package hiber.dao;
 
-import j.hibernate.model.Engines;
+import hiber.model.Engines;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 

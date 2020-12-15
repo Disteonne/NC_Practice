@@ -1,4 +1,4 @@
-package j.hibernate.model;
+package hiber.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

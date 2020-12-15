@@ -1,4 +1,4 @@
-package j.hibernate.dao;
+package hiber.dao;
 
 public interface Dao<Entity,Key> {
     void create(Entity model);
