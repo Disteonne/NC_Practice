@@ -1,9 +1,6 @@
 package hiber.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Objects;
 
 /*
@@ -18,6 +15,9 @@ import java.util.Objects;
 @Table(name ="engines")
 public class Engines {
     @Id
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id")
+    private int id;
     @Column
     private String model;
     @Column

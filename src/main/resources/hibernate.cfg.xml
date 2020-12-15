@@ -6,7 +6,7 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/config_lesson</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/many_to_one_lesson</property>
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">lbfyf1999</property>
         <property name="hibernate.connection.pool_size">2</property>
@@ -15,6 +15,7 @@
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="hbm2dll.auto">create</property>
         <mapping class="hiber.model.Engines"/>
+        <mapping class="hiber.model.Car"/>
 
     </session-factory>
 </hibernate-configuration>
