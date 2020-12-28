@@ -1,23 +1,23 @@
 package com.nc.l5;
 
-public class Node {
+public class Node<DATA extends Number> {
 
-    private int data;
-    private Node next;
+    private DATA data;
+    private Node<DATA> next;
 
      Node() {
     }
 
-     Node(int data, Node next) {
+     Node(DATA data, Node<DATA> next) {
         this.data = data;
         this.next = next;
     }
 
-     Node(int data) {
+     Node(DATA data) {
         this.data = data;
     }
 
-     int getData() {
+     DATA getData() {
         return data;
     }
 
@@ -25,11 +25,11 @@ public class Node {
         return next;
     }
 
-     void setData(int data) {
+     void setData(DATA data) {
         this.data = data;
     }
 
-     void setNext(Node next) {
+     void setNext(Node<DATA> next) {
         this.next = next;
     }
 
@@ -39,4 +39,8 @@ public class Node {
                 "data=" + data +
                 '}';
     }
+}
+//DATA1 НЕ ТАКАЯ Ж КАК DATA
+class ChildNode<DATA1 extends Number,X> extends Node<DATA1>{
+
 }

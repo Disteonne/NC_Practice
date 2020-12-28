@@ -1,8 +1,8 @@
 package com.nc.l5;
 
-public class SimpleLinkedList {
-    private Node first;
-    private Node last;
+public class SimpleLinkedList<DATA extends Number> {
+    private Node<DATA> first;
+    private Node<DATA> last;
     private int size;
 
     public SimpleLinkedList() {
@@ -12,20 +12,20 @@ public class SimpleLinkedList {
         return size;
     }
 
-    public void addToEnd(int data) {
+    public void addToEnd(DATA data) {
         if (size == 0) {
-            first = new Node(data);
+            first = new Node<DATA>(data);
             last = first;
             size = 1;
             return;
         }
-        Node node = new Node(data);
+        Node<DATA> node = new Node<>(data);
         last.setNext(node);
         last = node;
         size++;
     }
 
-    public void add(int data, int position) throws Exception {
+    public void add(DATA data, int position) throws Exception {
         if (position > size) {
             throw new Exception();
         }
@@ -41,7 +41,7 @@ public class SimpleLinkedList {
         for (int i = 0; i < position; i++) {
             cursor=cursor.getNext();
         }
-        Node elem=new Node(data,cursor.getNext());
+        Node<DATA> elem=new Node<>(data,cursor.getNext());
         cursor.setNext(elem);
         return;
 
@@ -56,7 +56,7 @@ public class SimpleLinkedList {
         return 0;
     }
 
-    public void set(int data, int position) {
+    public void set(DATA data, int position) {
 
     }
 

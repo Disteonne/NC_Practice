@@ -7,6 +7,10 @@ public class Main {
         int[] a = {7, 3, 4, 9, 2, 6, 1};
         //Arrays.sort(a);
         System.out.println(binarySearch(a,2));
+
+
+        SimpleLinkedList<Integer> lest=new SimpleLinkedList<>();
+        lest.addToEnd(123);
     }
 
     public static int binarySearch(int[] array, int element) {
