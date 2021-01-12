@@ -19,7 +19,7 @@ public class Main {
     List<B> listB=new ArrayList<>();
     List<C> listC=new ArrayList<>();
 
-    Main.process(listA);
+    //Main.process(listA);
     Main.process(listB);
     Main.process(listC);
 

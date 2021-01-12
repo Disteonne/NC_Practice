@@ -1,5 +1,7 @@
 package com.nc.l5;
 
+import java.util.LinkedList;
+
 public class Node<DATA extends Number> {
 
     private DATA data;
@@ -42,5 +44,8 @@ public class Node<DATA extends Number> {
 }
 //DATA1 НЕ ТАКАЯ Ж КАК DATA
 class ChildNode<DATA1 extends Number,X> extends Node<DATA1>{
+    public static void main(String[] args) {
+        LinkedList<String> linkedList=new LinkedList<>();
 
+    }
 }

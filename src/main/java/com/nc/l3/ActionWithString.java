@@ -20,5 +20,6 @@ public class ActionWithString {
         str1.equals("hello"); //если str1=null,то nullex
         //или
         "hello".equals("hello");//так
+
     }
 }
